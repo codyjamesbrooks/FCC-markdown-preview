@@ -1,0 +1,52 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+#app-wraper {
+  display: flex;
+  flex-flow: column;
+  border: 5px solid purple;
+  height: 100vh;
+}
+#page-title {
+  flex: 0 1 60px;
+  text-align: center;
+  border: 5px solid green;
+}
+#page-title > * {
+  margin: 0;
+}
+#editor-preview-container {
+  flex: 1;
+  justify-content: center;
+  border: 5px solid black;
+  display: flex;
+}
+#editor-preview-container > * {
+  margin: 0 1%;
+  flex: 1 1 auto;
+}
+#editor {
+  width: 50%;
+  border: 5px solid yellow;
+}
+#preview {
+  width: 50%;
+  border: 5px solid red;
+}
+/*
+#editor {
+  flex: 1 1 auto;
+  width: 50%;
+  margin: 0 2%;
+  border: 2px solid yellow;
+}
+#preview {
+  flex: 1 1 auto;
+  width: 50%;
+  margin: 0 2%;
+  border: 2px solid red;
+}
+*/
