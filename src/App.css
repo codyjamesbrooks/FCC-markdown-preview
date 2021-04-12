@@ -1,20 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+
 html,
 body {
   height: 100%;
   margin: 0;
   box-sizing: border-box;
+  background: #314e52;
 }
 #app-wraper {
   display: flex;
   flex-flow: column;
-  border: 5px solid purple;
-  height: 100vh;
+  height: 98vh;
 }
 #page-title {
   flex: 0 1 auto;
+  min-height: 55px;
   max-height: 7vh;
   text-align: center;
-  border: 5px solid green;
+  background: #314e52;
+  color: #f2a154;
+  font-family: Cabin, Arial, sans-serif;
+  letter-spacing: 0.1em;
 }
 #page-title > * {
   margin: 0;
@@ -23,20 +29,59 @@ body {
   flex: 1;
   max-height: 90vh;
   justify-content: center;
-  border: 5px solid black;
   display: flex;
+  background: #314e52;
+  margin-bottom: 1%;
 }
 #editor-preview-container > * {
-  margin: 0 1%;
   flex: 1 1 auto;
-  width: 50%;
   overflow: scroll;
+  margin: 0 1% 0 1%;
+  border: 7px solid #f2a154;
+  border-radius: 2%;
 }
 #editor {
-  border: 5px solid yellow;
+  width: 40%;
+  height: 88.5vh;
+  max-height: 88.5vh;
+  background: #f7f6e7;
+}
+#editor:focus {
+  width: 70%;
+  background: #e7e6e1;
 }
 #preview {
-  border: 5px solid red;
+  padding-left: 3px;
+  padding-right: 1px;
+  background: #f7f6e7;
+  width: 60%;
+  height: 89vh;
+}
+
+@media (max-width: 900px) {
+  #editor-preview-container {
+    flex: 1;
+    background: #314e52;
+    margin: 0 1% 1% 1%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #editor {
+    min-width: 95%;
+    max-width: 95%;
+    height: 40vh;
+  }
+  #editor:focus {
+    min-width: 95%;
+    max-width: 95%;
+    min-height: 50vh;
+  }
+  #preview {
+    width: 95%;
+    max-height: 60%;
+    margin-top: 1%;
+  }
 }
 /*
 #editor {

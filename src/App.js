@@ -8,7 +8,7 @@ let createMarkup;
 
 const options = {
   baseUrl: null,
-  breaks: false,
+  breaks: true,
   gfm: true,
   headerIds: false,
   headerPrefix: "",
@@ -50,7 +50,7 @@ class App extends React.Component {
     return (
       <div id="app-wraper">
         <div id="page-title">
-          <h1 id="title">MarkDown Previewer</h1>
+          <h1 id="title">Markdown Previewer</h1>
           <h6 id="author">coded by cody</h6>
         </div>
         <div id="editor-preview-container">
