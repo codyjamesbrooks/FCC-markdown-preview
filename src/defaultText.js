@@ -1,3 +1,4 @@
+// Default text that loads into textarea.
 const defaultText = `
 # Check out this Markdown Previewer
 ## Now check out this sub-title

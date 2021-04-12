@@ -7,11 +7,13 @@ body {
   box-sizing: border-box;
   background: #314e52;
 }
+/* flex box to allow editor-preview-container to fill page */
 #app-wraper {
   display: flex;
   flex-flow: column;
   height: 98vh;
 }
+/*------------- styling for the title --------------*/
 #page-title {
   flex: 0 1 auto;
   min-height: 55px;
@@ -25,6 +27,7 @@ body {
 #page-title > * {
   margin: 0;
 }
+/*----------- Styling for editor-preview-container --------------*/
 #editor-preview-container {
   flex: 1;
   max-height: 90vh;
@@ -58,7 +61,7 @@ body {
   width: 60%;
   height: 89vh;
 }
-
+/*-------- change flex direction and relitive sizes on small screens --------------*/
 @media (max-width: 900px) {
   #editor-preview-container {
     flex: 1;
@@ -85,17 +88,3 @@ body {
     margin-top: 1%;
   }
 }
-/*
-#editor {
-  flex: 1 1 auto;
-  width: 50%;
-  margin: 0 2%;
-  border: 2px solid yellow;
-}
-#preview {
-  flex: 1 1 auto;
-  width: 50%;
-  margin: 0 2%;
-  border: 2px solid red;
-}
-*/

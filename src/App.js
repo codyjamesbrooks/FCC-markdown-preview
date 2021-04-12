@@ -1,11 +1,15 @@
 import React from "react";
 import "./App.css";
-
+// marked function
 import marked from "marked";
+
+// import the default textarea text
 import defaultText from "./defaultText";
 
+// define variable to hold function for the dangerouslySetInnerHTML.
 let createMarkup;
 
+// options object will be used to set the return from marked JS function.
 const options = {
   baseUrl: null,
   breaks: true,
@@ -37,6 +41,8 @@ class App extends React.Component {
   }
 
   handleEditorChange(event) {
+    // When the text area changes, update the input to reflect the change. Also
+    // update the state.output variable with the output from the marked function
     this.setState({
       input: event.target.value,
       output: marked(event.target.value, options),
@@ -44,6 +50,8 @@ class App extends React.Component {
   }
 
   render() {
+    // process the html markup in this.state.output (which has already been converted to
+    // html using marked function
     createMarkup = () => {
       return { __html: this.state.output };
     };
