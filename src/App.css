@@ -11,7 +11,8 @@ body {
   height: 100vh;
 }
 #page-title {
-  flex: 0 1 60px;
+  flex: 0 1 auto;
+  max-height: 7vh;
   text-align: center;
   border: 5px solid green;
 }
@@ -20,6 +21,7 @@ body {
 }
 #editor-preview-container {
   flex: 1;
+  max-height: 90vh;
   justify-content: center;
   border: 5px solid black;
   display: flex;
@@ -27,13 +29,13 @@ body {
 #editor-preview-container > * {
   margin: 0 1%;
   flex: 1 1 auto;
+  width: 50%;
+  overflow: scroll;
 }
 #editor {
-  width: 50%;
   border: 5px solid yellow;
 }
 #preview {
-  width: 50%;
   border: 5px solid red;
 }
 /*
