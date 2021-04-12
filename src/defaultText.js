@@ -37,8 +37,8 @@ Or I can create a multiline indented code block like the one below
     function myFunction() {
         console.log("Don't worry it's possible")
         confirm("Is this cool") ? 
-        alert('I totally agree') : 
-        alert('You are wrong')
+        alert("I totally agree") : 
+        alert("You are wrong")
     }
 
 \`\`\`

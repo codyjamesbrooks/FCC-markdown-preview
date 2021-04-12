@@ -54,6 +54,7 @@ body {
   padding-left: 3px;
   padding-right: 1px;
   background: #f7f6e7;
+  font-family: Cabin, Arial, sans-serif;
   width: 60%;
   height: 89vh;
 }
@@ -70,7 +71,8 @@ body {
   #editor {
     min-width: 95%;
     max-width: 95%;
-    height: 40vh;
+    min-height: 30vh;
+    max-height: 40vh;
   }
   #editor:focus {
     min-width: 95%;
